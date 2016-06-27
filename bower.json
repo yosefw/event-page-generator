@@ -1,0 +1,20 @@
+{
+  "name": "event-landing-page-generator",
+  "description": "Static landing page generator for events (developed for PKW)",
+  "main": "index.html",
+  "authors": [
+    "Yosef Waysman"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^0.6.0"
+  }
+}

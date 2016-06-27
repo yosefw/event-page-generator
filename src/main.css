@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+html {
+	direction: rtl;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+		/* Appropriate font-family configuration, according to: http://purecss.io/grids/#using-grids-with-custom-fonts */
+		font-family: "Alef Hebrew", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+header {
+	text-align: center;
+}
+
+section:not(.sponsors) {
+	max-width: 45rem;
+	margin: 0 auto;
+}
+
+#sponsors {
+	display: none;
+}
+
+.sponsor {
+	display: inline-block;
+}
+
+.sponsor img {
+	width: 100%;
+}
+
+#sponsors-tier-1 .sponsor {
+	width: 45%;
+}
+
+#sponsors-tier-2 .sponsor,
+#host .sponsor {
+	width: 33%;
+}
