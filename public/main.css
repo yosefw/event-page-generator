@@ -1,13 +1,6 @@
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
-
-html {
+body {
 	direction: rtl;
-}
-
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-		/* Appropriate font-family configuration, according to: http://purecss.io/grids/#using-grids-with-custom-fonts */
-		font-family: "Alef Hebrew", Arial, sans-serif;
+	font-family: "Alef", Arial, sans-serif;
 }
 
 h1,
@@ -21,7 +14,7 @@ header {
 }
 
 section:not(.sponsors) {
-	max-width: 45rem;
+	max-width: 65rem;
 	margin: 0 auto;
 }
 

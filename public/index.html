@@ -1,9 +1,8 @@
 <!--
 	TASKS:
-	- navbar
-	- break "איזו התרגשות..."
-	- social buttons
-	- event title in live text
+	- Disappearing navbar
+	- Placeholders for sponsors
+	- Social buttons
 -->
 
 <!DOCTYPE html>
@@ -16,86 +15,79 @@
 
 		<title>האקתון כלשהו | הסדנא לידע ציבורי</title>
 
-		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-
-		<!--[if lte IE 8]>
-			<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-		<![endif]-->
-		<!--[if gt IE 8]><!-->
-			<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-		<!--<![endif]-->
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
 
 	</head>
 
 	<body>
 
-		<nav class="pure-menu pure-menu-horizontal pure-menu-fixed">
-			<a class="pure-menu-heading" href="">
-				האקתון כלשהו
-			</a>
-			<ul class="pure-menu-list">
-				<li class="pure-menu-item">
-					<a href="#schedule" class="pure-menu-link">
-						תכנית
-					</a>
-				</li>
-				<li class="pure-menu-item">
-					<a href="#more-info-1" class="pure-menu-link">
-						מידע נוסף
-					</a>
-				</li>
-				<li class="pure-menu-item">
-					<a href="#more-info-2" class="pure-menu-link">
-						עוד מידע נוסף
-					</a>
-				</li>
-				<li class="pure-menu-item">
-					<a href="#" class="pure-menu-link">
-						הצטרפו אלינו
-					</a>
-				</li>
-			</ul>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">האקתון כלשהו</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-menubuilder">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#schedule">תכנית</a>
+						</li>
+						<li>
+							<a href="#more-info-1">מידע נוסף</a>
+						</li>
+						<li>
+							<a href="#more-info-2">עוד מידע נוסף</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-left">
+						<a  class="btn btn-primary navbar-btn" href="#">
+							הצטרפו אלינו
+						</a>
+					</ul>
+				</div>
+			</div>
 		</nav>
 
-		<header class="pure-g-r">
 
-			<div id="event-hero pure-u-1">
+		<header class="">
 
-					<h1 class="event-title">
-						האקתון כלשהו
-					</h1>
-
-					<div id="event-byline">
-						<div id="event-time">
+			<div class="jumbotron">
+				<div class="container">
+					<h1>האקתון כלשהו</h1>
+					<p id="event-time">
 							שישי–שבת, 11–12 בנובמבר, 2016
-						</div>
-						<div id="event-loc">
-							<div id="event-loc-name">
-								קמפוס גוגל
-							</div>
-							<div id="event-loc-address">
-								יגאל אלון 98, קומה 34 (מגדל אלקטרה), תל־אביב
-							</div>
-						</div>
-					</div> <!-- #event-byline -->
-
-					<a href="#" class="pure-button pure-button-primary">הצטרפו אלינו</a>
-
-			</div> <!-- #event-hero -->
-
+					</p>
+					<p id="event-venue-name">
+						קמפוס גוגל
+					</p>
+					<p id="event-venue-address">
+						יגאל אלון 98, קומה 34 (מגדל אלקטרה), תל־אביב
+					</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="#">
+							הצטרפו אלינו
+						</a>
+					</p>
+				</div>
+			</div>
 		</header>
 
 		<main>
-
-			<section id="intro" class="pure-g-r">
+			<section id="intro" class="">
 				<p>
 					לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף.
 				</p>
 			</section> <!-- #intro -->
 
-			<section id="schedule" class="pure-g-r">
+			<section id="schedule" class="">
 				<h2>תכנית</h2>
 				<section>
 					<h3>
@@ -165,7 +157,7 @@
 					<h3>
 						יום 2
 					</h3>
-					<ol>
+					<ol class="list-unstyled">
 						<li>
 							<time>
 								09:00–10:00
@@ -218,12 +210,12 @@
 				</section>
 			</section> <!-- #schedule -->
 
-			<section id="more-info-1" class="more-info" class="pure-g-r">
+			<section id="more-info-1" class="more-info" class="">
 				<h2>מידע נוסף</h2>
 				<p>
 					אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.
 				</p>
-				<ol>
+				<ul>
 					<li>
 						עמחליף סחטיר בלובק
 					</li>
@@ -233,11 +225,11 @@
 					<li>
 						אס לכימפו
 					</li>
-				</ol>
+				</ul>
 
 			</section> <!-- .more-info -->
 
-			<section id="more-info-2" class="more-info" class="pure-g-r">
+			<section id="more-info-2" class="more-info" class="">
 				<h2>עוד מידע נוסף</h2>
 				<p>
 					קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף.
@@ -256,33 +248,33 @@
 
 			</section> <!-- .more-info -->
 
-			<section id="sponsors" class="pure-g-r">
+			<section id="sponsors" class="">
 				<h2>חסויות</h2>
 				<div id="sponsors-tier-1">
 					<h3>חסות זהב</h3>
-					<a class="sponsor" href="#">
-						<img class="pure-img" src="img/sponsors/heroku.png" alt="Heroku">
+					<a href="#">
+						<img class="" src="img/sponsors/heroku.png" alt="Heroku">
 					</a>
-					<a class="sponsor" href="#">
-						<img class="pure-img" src="img/sponsors/ok.png" alt="Open Knowledge International">
+					<a href="#">
+						<img class="" src="img/sponsors/ok.png" alt="Open Knowledge International">
 					</a>
 				</div>
 				<div id="sponsors-tier-2">
 					<h3>חסות כסף</h3>
-					<a class="sponsor" href="#">
-						<img class="pure-img" src="img/sponsors/github.png" alt="Github">
+					<a href="#">
+						<img class="" src="img/sponsors/github.png" alt="Github">
 					</a>
-					<a class="sponsor" href="#">
-						<img class="pure-img" src="img/sponsors/twitter.png" alt="Twitter">
+					<a href="#">
+						<img class="" src="img/sponsors/twitter.png" alt="Twitter">
 					</a>
-					<a class="sponsor" href="#">
-						<img class="pure-img" src="img/sponsors/wix.png" alt="Wix">
+					<a href="#">
+						<img class="" src="img/sponsors/wix.png" alt="Wix">
 					</a>
 				</div>
 				<div id="event-host">
 					<h3>אירוח באדיבות</h3>
-					<a class="sponsor" href="#">
-						<img class="pure-img" src="img/sponsors/google-campus.png" alt="Google Campus TLV">
+					<a href="#">
+						<img class="" src="img/sponsors/google-campus.png" alt="Google Campus TLV">
 					</a>
 				</div>
 
@@ -302,6 +294,8 @@
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 
 	</body>
 </html>

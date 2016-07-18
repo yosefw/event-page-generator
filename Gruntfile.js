@@ -2,10 +2,32 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    clean: {
-      img: [
-        "public/img/"
-      ]
+    watch: {
+      html: {
+        files: "src/*.html",
+        tasks: [
+          "copy:html"
+        ]
+      },
+      css: {
+        files: "src/*.css",
+        tasks: [
+          "copy:css"
+        ]
+      },
+      js: {
+        files: "src/*.js",
+        tasks: [
+          "copy:js"
+        ]
+      },
+      img: {
+        files: "src/img/**",
+        tasks: [
+          "clean:img",
+          "copy:img"
+        ]
+      }
     },
 
     copy: {
@@ -52,6 +74,12 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+      img: [
+        "public/img/"
+      ]
+    },
+
     browserSync: {
       bsFiles: {
         src : "public/*"
@@ -62,35 +90,8 @@ module.exports = function(grunt) {
           baseDir: "./public"
         }
       }
-    },
-
-    watch: {
-      html: {
-        files: "src/*.html",
-        tasks: [
-          "copy:html"
-        ]
-      },
-      css: {
-        files: "src/*.css",
-        tasks: [
-          "copy:css"
-        ]
-      },
-      js: {
-        files: "src/*.js",
-        tasks: [
-          "copy:js"
-        ]
-      },
-      img: {
-        files: "src/img/**",
-        tasks: [
-          "clean:img",
-          "copy:img"
-        ]
-      }
     }
+
   });
 
 
