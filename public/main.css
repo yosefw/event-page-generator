@@ -9,11 +9,16 @@ h3 {
 	text-align: center;
 }
 
+.navbar {
+	display: none;
+}
+
 header {
 	text-align: center;
 }
 
 section:not(.sponsors) {
+	width: 100%;
 	max-width: 65rem;
 	margin: 0 auto;
 }
@@ -22,19 +27,4 @@ section:not(.sponsors) {
 	display: none;
 }
 
-.sponsor {
-	display: inline-block;
-}
 
-.sponsor img {
-	width: 100%;
-}
-
-#sponsors-tier-1 .sponsor {
-	width: 45%;
-}
-
-#sponsors-tier-2 .sponsor,
-#host .sponsor {
-	width: 33%;
-}
