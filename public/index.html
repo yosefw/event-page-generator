@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
+		<script src="https://use.fontawesome.com/05a7ec2694.js"></script>
 		<link rel="stylesheet" href="main.css">
 
 	</head>
@@ -57,9 +58,8 @@
 		</nav>
 
 
-		<header class="">
+		<header class="jumbotron">
 
-			<div class="jumbotron">
 				<div class="container">
 					<h1>האקתון כלשהו</h1>
 					<p id="event-time">
@@ -77,7 +77,7 @@
 						</a>
 					</p>
 				</div>
-			</div>
+
 		</header>
 
 		<main>
@@ -252,29 +252,37 @@
 				<h2>חסויות</h2>
 				<div id="sponsors-tier-1">
 					<h3>חסות זהב</h3>
-					<a href="#">
-						<img class="" src="img/sponsors/heroku.png" alt="Heroku">
-					</a>
-					<a href="#">
-						<img class="" src="img/sponsors/ok.png" alt="Open Knowledge International">
-					</a>
+					<div class="row">
+						<div class="col-xs-6 col-md-4">
+							<a class="thumbnail" href="#">
+								<img class="img-responsive" src="img/sponsors/heroku.png" alt="Heroku">
+							</a>
+						</div>
+
+						<div class="col-xs-6 col-md-4">
+							<a class="thumbnail" href="#">
+								<img class="img-responsive" src="img/sponsors/ok.png" alt="Open Knowledge International">
+							</a>
+						</div>
+					</div> <!-- .row -->
 				</div>
+
 				<div id="sponsors-tier-2">
 					<h3>חסות כסף</h3>
-					<a href="#">
-						<img class="" src="img/sponsors/github.png" alt="Github">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="img/sponsors/github.png" alt="Github">
 					</a>
-					<a href="#">
-						<img class="" src="img/sponsors/twitter.png" alt="Twitter">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="img/sponsors/twitter.png" alt="Twitter">
 					</a>
-					<a href="#">
-						<img class="" src="img/sponsors/wix.png" alt="Wix">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="img/sponsors/wix.png" alt="Wix">
 					</a>
 				</div>
 				<div id="event-host">
 					<h3>אירוח באדיבות</h3>
-					<a href="#">
-						<img class="" src="img/sponsors/google-campus.png" alt="Google Campus TLV">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="img/sponsors/google-campus.png" alt="Google Campus TLV">
 					</a>
 				</div>
 
@@ -282,9 +290,9 @@
 
 		</main>
 
-		<footer>
+		<footer class="container-fluid">
 			<a class="pkw-logo inverted" href="http://www.hasadna.org.il/">הסדנא לידע ציבורי</a>
-			<div id="social">
+			<div id="social" class="pull-left">
 				<a id="website" href="http://www.hasadna.org.il/"><i class="fa fa-globe"></i></a>
 				<a id="forum" href="http://forum.hasadna.org.il/"><i class="fa fa-comments-o"></i></a>
 				<a id="mail" href="mailto:info@hasadna.org.il"><i class="fa fa-envelope"></i></a>

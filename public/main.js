@@ -3,9 +3,6 @@
 
 		var heroHeight = $('.jumbotron').outerHeight();
 
-		// hide .navbar first
-		$('.navbar').hide();
-
 		// fade in .navbar
 		$(function () {
 			$(window).scroll(function () {
