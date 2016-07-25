@@ -1,21 +1,25 @@
 (function ($) {
 	$(document).ready(function(){
 
+		var heroHeight = $('.jumbotron').outerHeight();
+
 		// hide .navbar first
-		$(".navbar").hide();
+		$('.navbar').hide();
 
 		// fade in .navbar
 		$(function () {
 			$(window).scroll(function () {
 
-				 // set distance user needs to scroll before we start fadeIn
-				if ($(this).scrollTop() > $('.jumbotron').outerHeight()) {
-						$('.navbar').show();
-				} else if ($(this).scrollTop() < $('.jumbotron').outerHeight()) {
-						$('.navbar').hidden();
+				var scrollPos= $(this).scrollTop();
+
+				if (scrollPos > heroHeight) {
+					$('.navbar').show();
+				};
+				if (scrollPos <= heroHeight) {
+					$('.navbar').hide();
 				}
 			});
 		});
 
-});
-	}(jQuery));
+	});
+}(jQuery));
