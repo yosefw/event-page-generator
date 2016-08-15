@@ -2,6 +2,17 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
+    sass: {
+      options: {
+          loadPath: ["node_modules/bootstrap-sass/assets/stylesheets"]
+        },
+      dist: {
+        files: {
+          "public/main.css": "src/sass/main.scss"
+        }
+      }
+    },
+
     watch: {
       html: {
         files: "src/*.html",
@@ -9,10 +20,10 @@ module.exports = function(grunt) {
           "copy:html"
         ]
       },
-      css: {
-        files: "src/*.css",
+      sass: {
+        files: "src/sass/**/*.scss",
         tasks: [
-          "copy:css"
+          "sass"
         ]
       },
       js: {
@@ -38,16 +49,6 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "src",
             src: "*.html",
-            dest: "public"
-          }
-        ]
-      },
-      css: {
-        files: [
-          {
-            expand: true,
-            cwd: "src",
-            src: "*.css",
             dest: "public"
           }
         ]
@@ -100,6 +101,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-contrib-sass");
 
-  grunt.registerTask("default", ["browserSync", "watch"]);
+  grunt.registerTask("default", ["sass", "browserSync", "watch"]);
 };
